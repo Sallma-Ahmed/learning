@@ -1,0 +1,42 @@
+<div class="view-switcher">
+  <button (click)="setView('view1')" [class.active]="currentView === 'view1'">
+    <i class="fas fa-list"></i>
+  </button>
+
+  <button (click)="setView('view2')" [class.active]="currentView === 'view2'">
+    <i class="fas fa-th-large"></i>
+  </button>
+  <button (click)="setView('view3')" [class.active]="currentView === 'view3'">
+    <i class="fas fa-th"></i>
+  </button>
+
+
+
+
+
+
+  <div class="icon">%</div>
+  <div class="progress-bar-container">
+      <div class="progress-bar">
+          <div class="progress" style="width: 0%;"></div>
+      </div>
+
+
+      <div class="profile">
+        <img src="assets/images/sela7eltmez.png" alt="Profile Picture" class="profile-img">
+        <div>
+            <div>الفصل الدراسي الأول</div>
+            <div>اللغة العربية</div>
+        </div>
+    </div>
+
+
+    </div>
+</div>
+
+
+<ng-container [ngSwitch]="currentView">
+  <app-view1 *ngSwitchCase="'view1'"></app-view1>
+  <app-view2 *ngSwitchCase="'view2'"></app-view2>
+  <app-view3 *ngSwitchCase="'view3'"></app-view3>
+</ng-container>

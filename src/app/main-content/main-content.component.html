@@ -1,0 +1,21 @@
+
+
+
+    <div class="page-container">
+
+            </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var lessonItems = document.querySelectorAll('.lesson-item');
+
+            lessonItems.forEach(function(item) {
+                var title = item.querySelector('.lesson-title');
+                if (title) {
+                    title.addEventListener('click', function() {
+                        item.classList.toggle('active');
+                    });
+                }
+            });
+        });
+    </script>

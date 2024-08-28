@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FilterService } from './service/filter.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private filterService:FilterService){}
+  update(data:string){
+    this.filterService.update(data)
+  }
   title = 'learning';
+progress: any;
 }

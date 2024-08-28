@@ -1,1 +1,193 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #adadad;
+  color: #fff;
+  padding: 0px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.progress-text {
+  margin-right: 10px;
+}
+
+.progress-bar {
+  width: 150px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #cdc11a;
+  border-radius: 5px;
+}
+
+.navbar-icon {
+  width: 30px;
+  height: 50px;
+  margin-right: 60px;
+}
+
+h3 {
+  margin: 0;
+}
+.profile {
+
+ /* flex-direction: column;
+  align-items: center;*/
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /*margin-bottom: 10px;*/
+}
+
+.profile-name {
+  color: #eee;
+  font-weight: bold;
+ /* border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;*/
+  margin-bottom: 5px;
+
+
+}
+.profile h5 {
+  color: white;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 170px;
+  height: 100%;
+  background-color: #0b758d;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #005f6b;
+  color: #ffffff;
+}
+
+
+/* .content{
+
+} */
+
+/* .content {
+  padding: 20px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+/* .content {
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 300px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: center;
+  right: 5;
+  top: 5px;
+} */
+
+.lesson-header {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+button {
+  background-color: #d7263d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/*
+.progress-container {
+
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 7px;
+  height: 20px;
+  margin-top: 10px;
+  position: left;
+}
+
+.progress-fill {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+*/

@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #397CA9;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.profile {
+  text-align: center; /* Align profile content to center */
+  margin-bottom: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+
+
+.profile h5 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.nav-menu li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a i {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.nav-menu li a span {
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.sidebar-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-btn, .contact-btn, .language-btn {
+  background-color: #fff;
+  color: #397CA9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-btn i, .contact-btn i, .language-btn i {
+  margin-left: 10px;
+}
+
+.subscribe-btn:hover, .contact-btn:hover, .language-btn:hover {
+  background-color: #FFD700;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    transition: width 0.3s;
+  }
+
+  .sidebar:hover {
+    width: 250px;
+  }
+
+  .nav-menu li a {
+    justify-content: center;
+  }
+
+  .nav-menu li a span {
+    display: none;
+  }
+
+  .sidebar:hover .nav-menu li a span {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+.language-buttons {
+  display: flex;
+}
+
+.language-buttons button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-buttons button.active {
+  background-color: #34495e;
+}
+
+.language-buttons button:hover {
+  background-color: #34495e;}
+  button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .toggle-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 235px;
+}
+
+
+.toggle-icon:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}

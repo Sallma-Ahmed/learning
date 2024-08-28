@@ -1,0 +1,69 @@
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #397CA9;
+}
+
+.progress-text {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.progress-bar-container {
+  width: 100px; /* Adjust as needed */
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%; /* Adjust the width dynamically to show progress */
+  height: 10px;
+  background-color: #397CA9;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subject {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 20px;
+}
+
+.additional-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.additional-info .course-name, .additional-info .semester {
+  font-size: 14px;
+  color: #397CA9;
+}
+
+.emoji-icon {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  border-radius: 50%;
+}

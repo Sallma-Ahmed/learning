@@ -1,0 +1,43 @@
+<div class="view-content">
+
+  <div class="content">
+    <div class="lesson-container">
+      <div class="lesson-container" *ngIf="filter === 'كتاب تفاعلي'|| filter !== 'تدريبات'&& filter !== 'الكل'">
+        <div class="lesson-item">
+            <h2>الصفحات</h2>
+            <a href="assets/pdfs/المقارنات_DW (1).pdf" target="_self">
+              <div class="img-container">
+                <img src="assets/images/book.png" alt="Header Image" class="header-image"></div>
+            </a>
+        </div>
+  </div>
+  <div class="lesson-container" *ngIf="filter !== 'تدريبات' && filter !== 'كتاب تفاعلي' && (filter === 'الكل' || filter !== 'الكل')">
+    <div class="lesson-item">
+            <h2>"نص الاستماع "كن ولا تكن</h2>
+            <a href="assets/pdfs/المقارنات_DW (1).pdf" target="_self">
+              <div class="img-container">
+                <img src="assets/images/listening.jpeg" alt="Header Image" class="header-image"></div>
+            </a>
+        </div>
+    </div>
+    <div class="lesson-container" *ngIf="filter === 'تدريبات'||filter !== 'كتاب تفاعلي' && filter !== 'الكل'">
+      <div class="lesson-item">
+          <h2>التدريبات التفاعلية</h2>
+          <a href="assets/pdfs/المقارنات_DW (1).pdf" target="_self">
+            <div class="img-container">
+              <img src="assets/images/activity.png" alt="Header Image" class="header-image"></div>
+          </a>
+      </div>
+  </div>
+  <div class="lesson-container" *ngIf="filter !== 'تدريبات' && filter !== 'كتاب تفاعلي' && (filter === 'الكل' || filter !== 'الكل')">
+    <div class="lesson-item">
+        <h2>اختبر معلوماتك</h2>
+        <a href="assets/pdfs/المقارنات_DW (1).pdf" target="_self">
+          <div class="img-container">
+            <img src="assets/images/test.png" alt="Header Image" class="header-image"></div>
+        </a>
+    </div>
+</div>
+</div>
+
+</div>

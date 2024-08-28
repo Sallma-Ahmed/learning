@@ -1,0 +1,17 @@
+:host{
+  width: 100%;
+}
+.view-content {
+  width: 1000px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 60px;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.lesson-container{
+  width: 50%;
+}
